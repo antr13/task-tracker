@@ -6,39 +6,21 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="projects-grid">
-  <div class="project-card">
-    <h3>Personal Portfolio Website</h3>
-    <p>
-      Simple responsive portfolio page built with HTML and CSS.
-      Created to showcase my skills and serve as a base for future projects.
-    </p>
-    <div class="project-meta">
-      Tech: HTML, CSS · Live:
-      <a href="https://antr13.github.io/antonia-portfolio/" target="_blank">
-        antonia-portfolio
-      </a>
-    </div>
-  </div>
+  <div class="app">
+    <h1>Task Tracker ✅</h1>
 
-  <div class="project-card">
-    <h3>Task Tracker</h3>
-    <p>
-      Small web app that allows users to add, mark as done, and remove tasks.
-      Tasks are saved in the browser so they stay even after refresh.
-    </p>
-    <div class="project-meta">
-      Tech: HTML, CSS, JavaScript · Live:
-      <a href="https://antr13.github.io/task-tracker/" target="_blank">
-        task-tracker
-      </a>
-      · Code:
-      <a href="https://github.com/antr13/task-tracker" target="_blank">
-        GitHub repo
-      </a>
-    </div>
+    <form id="task-form">
+      <input 
+        type="text" 
+        id="task-input" 
+        placeholder="Add a new task..."
+        autocomplete="off"
+      />
+      <button type="submit">Add</button>
+    </form>
+
+    <ul id="task-list"></ul>
   </div>
-</div>
 
   <script src="script.js"></script>
 </body>
